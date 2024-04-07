@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const todoSchema = new mongoose.Schema(
     {
@@ -11,18 +11,17 @@ const todoSchema = new mongoose.Schema(
             type: String,
             required: true,
             maxLength: 50,
-            
         },
         createdAt: {
             type: Date,
             required: true,
-            default: Date.now()
+            default: Date.now(),
         },
         updatedAt: {
             type: Date,
             required: true,
-            default: Date.now()
+            default: Date.now(),
         }
     }
 );
-module.exports = mongoose.model('Todo', todoSchema);
+module.exports = mongoose.model("Todo", todoSchema);
