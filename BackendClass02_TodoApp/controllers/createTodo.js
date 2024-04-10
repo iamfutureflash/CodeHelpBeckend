@@ -16,15 +16,15 @@ exports.createTodo = async (req, res) => {
     }
     catch (error) {
         console.log('====================================');
-        console.error(err);
+        console.error(error);
         console.log('====================================');
         console.log('====================================');
-        console.log(err);
+        console.log(error);
         console.log('====================================');
         res.status(500).json({
             success: false,
             data: "internal server error",
-            message: err.message,
+            message: error.message,
         })
     }
 }

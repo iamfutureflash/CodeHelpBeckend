@@ -1,7 +1,6 @@
 const express = require("express");
 const todoRouter = require("./routes/todos");
 const dbConnect = require("./config/database");
-const defaultRouter = require("./routes/todos");
 require("dotenv").config();
 
 const app = express();
